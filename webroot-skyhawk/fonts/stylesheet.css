@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'GAMECUBEN';
+    src: url('GAMECUBENDualSet.eot');
+    src: url('GAMECUBENDualSet.eot?#iefix') format('embedded-opentype'),
+        url('GAMECUBENDualSet.woff2') format('woff2'),
+        url('GAMECUBENDualSet.woff') format('woff'),
+        url('GAMECUBENDualSet.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica LT';
+    src: url('HelveticaLT-Black.eot');
+    src: url('HelveticaLT-Black.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLT-Black.woff2') format('woff2'),
+        url('HelveticaLT-Black.woff') format('woff'),
+        url('HelveticaLT-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('Ubuntu-Bold.eot');
+    src: url('Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Ubuntu-Bold.woff2') format('woff2'),
+        url('Ubuntu-Bold.woff') format('woff'),
+        url('Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

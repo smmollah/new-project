@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+	background-color: #fff;
+	color: #000;
+}
+
+.content{
+	overflow: hidden;
+}
+
+@font-face {
+    font-family: 'GAMECUBEN';
+    src: url('../fonts/GAMECUBENDualSet.eot');
+    src: url('../fonts/GAMECUBENDualSet.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GAMECUBENDualSet.woff2') format('woff2'),
+        url('../fonts/GAMECUBENDualSet.woff') format('woff'),
+        url('../fonts/GAMECUBENDualSet.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica LT';
+    src: url('../fonts/HelveticaLT-Black.eot');
+    src: url('../fonts/HelveticaLT-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaLT-Black.woff2') format('woff2'),
+        url('../fonts/HelveticaLT-Black.woff') format('woff'),
+        url('../fonts/HelveticaLT-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Bold.eot');
+    src: url('../fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Ubuntu-Bold.woff2') format('woff2'),
+        url('../fonts/Ubuntu-Bold.woff') format('woff'),
+        url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+.landing-wanna{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	height: 100%;
+	padding: 50px;
+	z-index: 1;
+    position: relative;
+	
+}
+
+	.content {
+	background-image: url('../img/wanna-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+  .info-msg{
+    color: rgba(255,255,255,0.8);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .wanna-title-3{
+    margin: 30px 0 10px;
+    display: inline-block;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+  .wanna-title-3 span{
+    font-family: 'Ubuntu';
+  }
+  .wanna-title{
+    margin: 40px 0 20px;
+    display: inline-block;
+    color: #fff;
+    font-size: 22px;  
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+  
+  .wanna-desc{
+    max-width: 60%;
+    outline: none;
+    position: relative;
+    border-radius: 0.6em;
+    padding: 10px 20px;
+    margin: 10px auto 0px;
+    width: 100%;
+    border: 0px solid #fff;
+    background: rgba(255,255,255,0.9);
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+
+  .wanna-desc::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #60615f;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+  .wanna-desc::-moz-placeholder { /* Firefox 19+ */
+    color: #60615f;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+  .wanna-desc:-ms-input-placeholder { /* IE 10+ */
+    color: #60615f;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+  .wanna-desc:-moz-placeholder { /* Firefox 18- */
+    color: #60615f;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+ 
+  .wanna-title-2{
+    color: #fff;
+    font-weight: 700;
+	  margin: 20px 0;
+    display: inline-block;
+	}
+  .gradient {
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(at 300px 300px, rgba(70,120,70,.7) 0, rgba(0,0,0,.9) 70%);
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+	.radio-img{
+		margin: 0 5px;
+		transition: 0.3s all linear;
+		transform: scale(1);
+	}
+	.radio-img:hover{
+		transform: scale(1.1);
+	}
+  .radio-img > input {
+	display: none;
+  }
+  .radio-img > .bet-value {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffd400;
+    border-radius: 0.6em;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    padding: 14px;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+	transition: 0.3s all linear;
+  }
+  .radio-img > input:checked + .bet-value {
+	border: 2px solid #c4ff5e;
+    box-shadow: 0 0 40px 40px #bcde0e inset;
+    color: #000000;
+    transform: scale(1.1);
+  }
+  .bet-input{
+	border: 2px solid #ffffff;
+    border-radius: 0.6em;
+    color: #ffffff;
+    padding: 15px 0px 15px 35px;
+    font-size: 20px;
+    width: 80px;
+    height: 60px;
+    margin: 0 5px;
+    background: transparent;
+    outline: none;
+  }
+  .cs-input {
+	position: relative;
+  }
+  .cs-input .prepand-input{
+	position: absolute;
+    left: 20px;
+    top: 14px;
+    color: #fff;
+    font-size: 20px;
+  }
+  .fields{
+    max-width: 300px;
+    width: 100%;
+	text-align: left;
+  }
+  .fields label{
+    color: #fff;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding-left: 2px;
+    letter-spacing: 0.4px;
+    margin-top: 5px;
+  }
+  .fields span{
+    background: rgba(255,255,255,0.15);
+    display: block;
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .finish-button{
+    max-width: 540px;
+    width: 100%;
+    background: transparent;
+    border: 2px solid #d6ff00;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d6ff00;
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s all linear;
+    transform: scale(1);
+    outline: none;
+    letter-spacing: 2px;
+  }
+  .finish-button:hover,
+  .finish-button:focus{
+    transform: scale(1.1);
+	outline: none;
+	background: #c3e220;
+	color: #000;
+  }
+  .bet-user{
+    outline: none;
+    position: relative;
+    border-radius: 0.6em;
+    padding: 10px 20px;
+    margin: 10px auto;
+    width: 100%;
+    border: 0px solid #fff;
+    background: rgba(255,255,255,0.9);
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+
+  .bet-user::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #60615f;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.bet-user::-moz-placeholder { /* Firefox 19+ */
+    color: #60615f;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.bet-user:-ms-input-placeholder { /* IE 10+ */
+    color: #60615f;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.bet-user:-moz-placeholder { /* Firefox 18- */
+    color: #60615f;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+  
+
+  .bg-bubbles {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+  opacity: 0.3;
+  }
+  .bg-bubbles li {
+	position: absolute;
+	list-style: none;
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(255, 255, 255, 0.05);
+	bottom: -160px;
+	-webkit-animation: square 25s infinite;
+	animation: square 25s infinite;
+	transition-timing-function: linear;
+  }
+  .bg-bubbles li:nth-child(1) {
+	left: 10%;
+  }
+  .bg-bubbles li:nth-child(2) {
+	left: 20%;
+	width: 80px;
+	height: 80px;
+	-webkit-animation-delay: 2s;
+			animation-delay: 2s;
+	-webkit-animation-duration: 17s;
+			animation-duration: 17s;
+  }
+  .bg-bubbles li:nth-child(3) {
+	left: 25%;
+	-webkit-animation-delay: 4s;
+			animation-delay: 4s;
+  }
+  .bg-bubbles li:nth-child(4) {
+	left: 40%;
+	width: 60px;
+	height: 60px;
+	-webkit-animation-duration: 22s;
+			animation-duration: 22s;
+	background-color: rgba(255, 255, 255, 0.20);
+  }
+  .bg-bubbles li:nth-child(5) {
+	left: 70%;
+  }
+  .bg-bubbles li:nth-child(6) {
+	left: 80%;
+	width: 120px;
+	height: 120px;
+	-webkit-animation-delay: 3s;
+			animation-delay: 3s;
+	background-color: rgba(255, 255, 255, 0.1);
+  }
+  .bg-bubbles li:nth-child(7) {
+	left: 32%;
+	width: 160px;
+	height: 160px;
+	-webkit-animation-delay: 7s;
+			animation-delay: 7s;
+  }
+  .bg-bubbles li:nth-child(8) {
+	left: 55%;
+	width: 20px;
+	height: 20px;
+	-webkit-animation-delay: 15s;
+			animation-delay: 15s;
+	-webkit-animation-duration: 40s;
+			animation-duration: 40s;
+  }
+  .bg-bubbles li:nth-child(9) {
+	left: 25%;
+	width: 10px;
+	height: 10px;
+	-webkit-animation-delay: 2s;
+			animation-delay: 2s;
+	-webkit-animation-duration: 40s;
+			animation-duration: 40s;
+	background-color: rgba(255, 255, 255, 0.2);
+  }
+  .bg-bubbles li:nth-child(10) {
+	left: 90%;
+	width: 160px;
+	height: 160px;
+	-webkit-animation-delay: 11s;
+			animation-delay: 11s;
+  }
+  @-webkit-keyframes square {
+	0% {
+	  transform: translateY(0);
+	}
+	100% {
+	  transform: translateY(-700px) rotate(600deg);
+	}
+  }
+  @keyframes square {
+	0% {
+	  transform: translateY(0);
+	}
+	100% {
+	  transform: translateY(-700px) rotate(600deg);
+	}
+  }
+  
+
+@media only screen and (max-width: 768px) {
+	main.content {
+		padding: 0px;
+	}
+	.wanna-title {
+		margin: 20px 0 18px;
+		font-size: 14px;
+	}
+	.radio-img > .bet-value{
+		font-size: 14px;
+		width: 45px;
+		height: 45px;
+	}
+	.bet-input{
+		font-size: 14px;
+		width: 70px;
+		height: 45px;
+	}
+	.cs-input .prepand-input {
+		top: 13px;
+		color: #fff;
+		font-size: 14px;
+	}
+	.wanna-desc {
+		max-width: 100%;
+	}
+	.landing-wanna{
+	    padding: 30px 10px;
+    	height: auto;
+		overflow-x: hidden;
+	}
+	.finish-button {		
+		font-size: 14px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 15px 10px;
+	}
+	
+}
+@media only screen and (max-width: 1200px) {
+  .wanna-desc {
+		max-width: 100%;
+	}
+}

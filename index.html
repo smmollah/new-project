@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>TITLE</title>
+	
+</head>
+<body>
+  <h1>This is a text</h1>
+	<div id="debug"></div>
+</body>
+
+<script type="text/javascript">
+  
+  	fetch("sample-file.json")
+	.then(response => response.json())
+	.then(data => {
+	
+	  console.log(data.sentence)
+	  document.querySelector("#debug").innerText = data.sentence
+	
+	
+	
+	})
+
+</script>
+</html>

@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "ef1cbef0-2237-4626-949a-d29d1c857c33",
+		"name": "YWB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"betdesc\" : \"test 123\",\r\n    \"amount\" : \"500\",\r\n    \"emails\" : [\"info.mayurm@gmail.com\",\"ys1.soete@gmail.com \"],\r\n    \"isAnAdult\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://skyhawk.youwannabet.com/v1/api/bet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"v1",
+						"api",
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cancel bet",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"betdesc\" : \"test desc\",\r\n    \"amount\" : \"10.5\",\r\n    \"emails\" : [\"abc@gmail.com\", \"pqr@gmail.com\"],\r\n    \"isAnAdult\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://skyhawk.youwannabet.com/v1/api/bet/cancel/402880ee7a47c1ab017a47c1daae0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"v1",
+						"api",
+						"bet",
+						"cancel",
+						"402880ee7a47c1ab017a47c1daae0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "settle bet",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"betdesc\" : \"test desc\",\r\n    \"amount\" : \"10.5\",\r\n    \"emails\" : [\"abc@gmail.com\", \"pqr@gmail.com\"],\r\n    \"isAnAdult\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://skyhawk.youwannabet.com/v1/api/bet/settle/402880ee7a47c1ab017a47c1daae0001?winnerId=402880ee7a47c1ab017a47c1daae0002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"v1",
+						"api",
+						"bet",
+						"settle",
+						"402880ee7a47c1ab017a47c1daae0001"
+					],
+					"query": [
+						{
+							"key": "winnerId",
+							"value": "402880ee7a47c1ab017a47c1daae0002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get bet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://skyhawk.youwannabet.com/v1/api/bet/2c9daa207a38e854017a38e92beb0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"v1",
+						"api",
+						"bet",
+						"2c9daa207a38e854017a38e92beb0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get participants by bet id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://skyhawk.youwannabet.com/v1/api/bet/participants/402880ee7a47c1ab017a47c1da830000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"v1",
+						"api",
+						"bet",
+						"participants",
+						"402880ee7a47c1ab017a47c1da830000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get bet list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"betdesc\" : \"test desc\",\r\n    \"amount\" : \"10.5\",\r\n    \"emails\" : [\"abc@gmail.com\", \"pqr@gmail.com\"],\r\n    \"isAnAdult\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://skyhawk.youwannabet.com/v1/api/bet/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"v1",
+						"api",
+						"bet",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
